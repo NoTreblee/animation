@@ -6,26 +6,33 @@ body {
   align-items: center;
 }
 .demo-wrapper {
-  height: 100vh;
-  width: 930px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  // perspective: 20px;
+  // z-index: 100px;
+  // transform: rotate(180deg), translate(-5000px, 10000px);
 }
 .square {
+  position: absolute;
+  top: 60%;
+  left: 50%;
   opacity: 0;
-  margin: 30px;
+  // margin: 30px;
   width: 1px;
   height: 1px;
   border-radius: 10%;
   background-color: rgba(255, 255, 255, 0);
   &::after {
+    position: fixed;
     display: block;
     content: '';
-    width: 40px;
-    height: 10px;
+    width: 80px;
+    height: 5px;
 
     background-color: #fff;
     color: #fff;
