@@ -1,6 +1,9 @@
 body {
   background-color: rgb(14, 12, 12);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .demo-wrapper {
   height: 100vh;
