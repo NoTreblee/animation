@@ -15,7 +15,7 @@ anime({
   loop: true,
   direction: 'alternate',
   duration: 21333,
-  easing: 'easeInOutQuad',
+  easing: 'cubicBezier(.5, .05, .1, .3)',
   translateY: {
     value: '10000px',
     duration: 128000,
@@ -24,10 +24,10 @@ anime({
     loop: true,
   },
   scale: {
-    value: 3,
+    value: 0.2,
     duration: 21333,
     easing: 'easeInOutQuad',
-    delay: anime.stagger(500, { grid: [100, 50], from: 'center' }),
+    delay: anime.stagger(650, { grid: [100, 50], from: 'center' }),
   },
   // rotate: {
   //   value: anime.stagger(1),
