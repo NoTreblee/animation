@@ -13,15 +13,15 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  // perspective: 20px;
-  // z-index: 100px;
+  z-index: 100;
   // transform: rotate(180deg), translate(-5000px, 10000px);
 }
 .square {
   position: absolute;
-  top: 60%;
+  top: 0%;
   left: 50%;
   opacity: 0;
+  border-radius: 50%;
   // margin: 30px;
   width: 1px;
   height: 1px;
@@ -39,4 +39,14 @@ body {
     border-radius: 10%;
     transform: skew(31deg, 42deg);
   }
+}
+.circle {
+  opacity: 0.1;
+  z-index: -10;
+  position: fixed;
+  top: -500px;
+  width: 4000px;
+  height: 40px;
+  border: 50px solid;
+  border-color: rgba(255, 255, 255, 0.603);
 }
